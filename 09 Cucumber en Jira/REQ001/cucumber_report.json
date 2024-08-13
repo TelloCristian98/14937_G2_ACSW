@@ -1,68 +1,58 @@
-{
-    "@attributes": {
-        "name": "default"
-    },
-    "testsuite": {
-        "@attributes": {
-            "name": "Registro de clientes",
-            "tests": "4",
-            "skipped": "0",
-            "failures": "3",
-            "errors": "0",
-            "time": "1"
-        },
-        "testcase": [
-            {
-                "@attributes": {
-                    "name": "Registro exitoso de un nuevo cliente",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Registro exitoso\": The text \"Registro exitoso\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
-                }
+[
+  {
+    "uri": "features/test.feature",
+    "id": "test-feature",
+    "keyword": "Feature",
+    "name": "Test Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "test-feature;test-scenario",
+        "keyword": "Scenario",
+        "name": "Test Scenario",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "a precondition",
+            "line": 3,
+            "match": {
+              "location": "steps.rb:10"
             },
-            {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con c\u00e9dula duplicada",
-                    "classname": "Registro de clientes",
-                    "status": "passed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                }
-            },
-            {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con campos vac\u00edos",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Por favor corrija los errores para continuar\": The text \"Por favor corrija los errores para continuar\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
-                }
-            },
-            {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con c\u00e9dula inv\u00e1lida",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Formato invalido\": The text \"Formato invalido\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
-                }
+            "result": {
+              "status": "passed",
+              "duration": 1000
             }
+          },
+          {
+            "keyword": "When ",
+            "name": "an action is performed",
+            "line": 4,
+            "match": {
+              "location": "steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an outcome is expected",
+            "line": 5,
+            "match": {
+              "location": "steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000
+            }
+          }
         ]
-    }
-}
+      }
+    ]
+  }
+]
