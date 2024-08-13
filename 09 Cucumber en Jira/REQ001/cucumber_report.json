@@ -1,68 +1,72 @@
-{
-    "@attributes": {
-        "name": "default"
-    },
-    "testsuite": {
-        "@attributes": {
-            "name": "Registro de clientes",
-            "tests": "4",
-            "skipped": "0",
-            "failures": "3",
-            "errors": "0",
-            "time": "1"
-        },
-        "testcase": [
+[
+    {
+      "description": "Registro de clientes",
+      "keyword": "Feature",
+      "name": "Registro de clientes",
+      "line": 1,
+      "id": "registro-de-clientes",
+      "tags": [],
+      "uri": "09 Cucumber en Jira/REQ001/client_registration.feature",
+      "elements": [
+        {
+          "id": "registro-de-clientes;registro-exitoso-de-un-nuevo-cliente",
+          "keyword": "Scenario",
+          "line": 2,
+          "name": "Registro exitoso de un nuevo cliente",
+          "tags": [],
+          "type": "scenario",
+          "steps": [
             {
-                "@attributes": {
-                    "name": "Registro exitoso de un nuevo cliente",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Registro exitoso\": The text \"Registro exitoso\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
-                }
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 3,
+              "name": "que estoy autenticado",
+              "result": {
+                "status": "passed",
+                "duration": 123456 
+              }
             },
             {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con c\u00e9dula duplicada",
-                    "classname": "Registro de clientes",
-                    "status": "passed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                }
+              "arguments": [],
+              "keyword": "And ",
+              "line": 4,
+              "name": "que estoy en la página de registro de clientes",
+              "result": {
+                "status": "passed",
+                "duration": 123456
+              }
             },
             {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con campos vac\u00edos",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Por favor corrija los errores para continuar\": The text \"Por favor corrija los errores para continuar\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
+              "arguments": [
+                {
+                  "value": "1724569874"
                 }
+              ],
+              "keyword": "When ",
+              "line": 5,
+              "name": "ingreso \"1724569874\" en el campo \"ci_cliente\"",
+              "result": {
+                "status": "passed",
+                "duration": 123456
+              }
             },
             {
-                "@attributes": {
-                    "name": "Registro fallido de un cliente con c\u00e9dula inv\u00e1lida",
-                    "classname": "Registro de clientes",
-                    "status": "failed",
-                    "time": "0",
-                    "file": "features\\client_registration.feature"
-                },
-                "failure": {
-                    "@attributes": {
-                        "message": "Then deber\u00eda ver \"Formato invalido\": The text \"Formato invalido\" was not found anywhere in the text of the current page. (Behat\\Mink\\Exception\\ResponseTextException)"
-                    }
+              "arguments": [
+                {
+                  "value": "Registro exitoso"
                 }
+              ],
+              "keyword": "Then ",
+              "line": 6,
+              "name": "debería ver \"Registro exitoso\"",
+              "result": {
+                "status": "passed",
+                "duration": 123456
+              }
             }
-        ]
+          ]
+        }
+      ]
     }
-}
+  ]
+  
