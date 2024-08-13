@@ -13,39 +13,117 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "que estoy autenticado en la página de registro de clientes",
+            "name": "que estoy autenticado",
             "match": {
-              "location": "features\\test\\test.js:6"
+              "location": "features\\test\\REQ001.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1293499
+              "duration": 2342899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de registro de clientes",
+            "match": {
+              "location": "features\\test\\REQ001.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 320099
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 5,
-            "name": "ingreso un id en el campo ci_cliente",
+            "line": 6,
+            "name": "ingreso \"1724569874\" en el campo \"ci_cliente\"",
             "match": {
-              "location": "features\\test\\test.js:11"
+              "location": "features\\test\\REQ001.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 129999
+              "duration": 129500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"Juan\" en el campo \"nombre_cliente\"",
+            "match": {
+              "location": "features\\test\\REQ001.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 117999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso \"Perez\" en el campo \"apellido_cliente\"",
+            "match": {
+              "location": "features\\test\\REQ001.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "ingreso \"0978805846\" en el campo \"telefono_cliente\"",
+            "match": {
+              "location": "features\\test\\REQ001.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "ingreso \"25 de noviembre y maldonado\" en el campo \"direccion_cliente\"",
+            "match": {
+              "location": "features\\test\\REQ001.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "hago clic en el botón \"Registrar Cliente\"",
+            "match": {
+              "location": "features\\test\\REQ001.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 138900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "debería ver registro exitoso",
+            "line": 12,
+            "name": "debería ver \"Registro exitoso\"",
             "match": {
-              "location": "features\\test\\test.js:21"
+              "location": "features\\test\\REQ001.js:59"
             },
             "result": {
               "status": "passed",
-              "duration": 200500
+              "duration": 137400
             }
           }
         ],
@@ -58,6 +136,255 @@
     "keyword": "Feature",
     "name": "Registro de clientes",
     "tags": [],
-    "uri": "features\\REQ01.feature"
+    "uri": "features\\REQ001.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualizar-información-de-clientes;fallo-al-buscar-un-cliente-inexistente",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al buscar un cliente inexistente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado en el sistema",
+            "match": {
+              "location": "features\\test\\REQ002.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1293000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de clientes",
+            "match": {
+              "location": "features\\test\\REQ002.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1738499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso \"0000000000\" en el campo \"campo\"",
+            "match": {
+              "location": "features\\test\\REQ002.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hago clic en el botón \"Buscar\"",
+            "match": {
+              "location": "features\\test\\REQ002.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 388199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería ver \"No se encontraron resultados para el cliente con CI 0000000000\"",
+            "match": {
+              "location": "features\\test\\REQ002.js:30"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 423799,
+              "error_message": "Error: Se esperaba \"No se encontraron resultados para el cliente con CI 0000000000\" pero se encontró \"Texto incorrecto para asegurar que la prueba falle\"\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ002.js:36:11)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualizar-información-de-clientes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualizar información de clientes",
+    "tags": [],
+    "uri": "features\\REQ002.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivar-clientes;inactivación-exitosa-de-un-cliente",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Inactivación exitosa de un cliente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado en el sistema del cliente",
+            "match": {
+              "location": "features\\test\\REQ003.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 542199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de clientes para la prueba",
+            "match": {
+              "location": "features\\test\\REQ003.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de confirmar para el cliente con CI \"1721286395\"",
+            "match": {
+              "location": "features\\test\\REQ003.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Cliente inactivado exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ003.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 534899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivar-clientes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivar clientes",
+    "tags": [],
+    "uri": "features\\REQ003.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buscar-clientes;búsqueda-exitosa-de-un-cliente-existente",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Búsqueda exitosa de un cliente existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "que estoy autenticado dentro del sistema",
+            "match": {
+              "location": "features\\test\\REQ004.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 701000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "que estoy en la página de clientes para el feature 4",
+            "match": {
+              "location": "features\\test\\REQ004.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 598600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "ingreso \"1721286395\" en el campo \"campo\"",
+            "match": {
+              "location": "features\\test\\REQ004.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 490999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "hago clic en el botón \"Buscar\" del sistema",
+            "match": {
+              "location": "features\\test\\REQ004.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 416299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "debería ver \"Juan Perez\"",
+            "match": {
+              "location": "features\\test\\REQ004.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 549399
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "buscar-clientes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Buscar clientes",
+    "tags": [],
+    "uri": "features\\REQ004.feature"
   }
 ]
