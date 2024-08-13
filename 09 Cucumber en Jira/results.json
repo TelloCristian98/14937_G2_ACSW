@@ -1,0 +1,63 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-clientes;registro-exitoso-de-un-nuevo-cliente",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Registro exitoso de un nuevo cliente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado en la página de registro de clientes",
+            "match": {
+              "location": "features\\test\\test.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1293499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso un id en el campo ci_cliente",
+            "match": {
+              "location": "features\\test\\test.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver registro exitoso",
+            "match": {
+              "location": "features\\test\\test.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-clientes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de clientes",
+    "tags": [],
+    "uri": "features\\REQ01.feature"
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "09-cucumber-en-jira",
+  "version": "1.0.0",
+  "main": "test.js",
+  "scripts": {
+    "test": "cucumber-js --require features --format json:results.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "cucumber-html-reporter": "^7.1.1",
+    "cucumber-junit": "^1.7.1"
+  }
+}
