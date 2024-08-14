@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2342899
+              "duration": 1279199
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 320099
+              "duration": 163099
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 129500
+              "duration": 100300
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 117999
+              "duration": 106300
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170900
+              "duration": 105400
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168299
+              "duration": 89300
             }
           },
           {
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 122100
+              "duration": 92599
             }
           },
           {
@@ -110,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 138900
+              "duration": 111599
             }
           },
           {
@@ -123,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137400
+              "duration": 105400
             }
           }
         ],
@@ -137,6 +137,254 @@
     "name": "Registro de clientes",
     "tags": [],
     "uri": "features\\REQ001.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-productos;actualización-exitosa-de-la-información-de-un-producto",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Actualización exitosa de la información de un producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy en la página de registro de productos para el test",
+            "match": {
+              "location": "features\\test\\REQ0010.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1044199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de productos correctamente",
+            "match": {
+              "location": "features\\test\\REQ0010.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 499500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Nuevo Producto B\" en el campo \"nombre_producto\"",
+            "match": {
+              "location": "features\\test\\REQ0010.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 407299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"123456\" en el campo \"codigo_producto\"",
+            "match": {
+              "location": "features\\test\\REQ0010.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 412900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hago clic en el botón \"Guardar Cambios \"",
+            "match": {
+              "location": "features\\test\\REQ0010.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 386000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería ver \"Información actualizada exitosamente \"",
+            "match": {
+              "location": "features\\test\\REQ0010.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Productos",
+    "tags": [],
+    "uri": "features\\REQ0010.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivación-de-productos;inactivación-exitosa-de-un-producto",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Inactivación exitosa de un producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que tengo acceso a la gestión de productos del feature 11",
+            "match": {
+              "location": "features\\test\\REQ0011.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 348800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de productos con exito",
+            "match": {
+              "location": "features\\test\\REQ0011.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "hago clic en el botón \"Inactivar\" junto al producto \"Producto A\"",
+            "match": {
+              "location": "features\\test\\REQ0011.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 649199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver \"Producto inactivado exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ0011.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 431100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivación-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivación de Productos",
+    "tags": [],
+    "uri": "features\\REQ0011.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "búsqueda-de-productos;búsqueda-exitosa-de-un-producto-existente",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Búsqueda exitosa de un producto existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy en la página de búsqueda de productos del feature 12",
+            "match": {
+              "location": "features\\test\\REQ0012.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de productos correctamente en el feature 12",
+            "match": {
+              "location": "features\\test\\REQ0012.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 347099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Producto A\" en el campo \"campoUno\"",
+            "match": {
+              "location": "features\\test\\REQ0012.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver \"Producto A\"",
+            "match": {
+              "location": "features\\test\\REQ0012.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 734500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "búsqueda-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Búsqueda de Productos",
+    "tags": [],
+    "uri": "features\\REQ0012.feature"
   },
   {
     "description": "",
@@ -158,7 +406,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1293000
+              "duration": 527899
             }
           },
           {
@@ -171,7 +419,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1738499
+              "duration": 516099
             }
           },
           {
@@ -184,7 +432,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 555999
+              "duration": 392699
             }
           },
           {
@@ -197,7 +445,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 388199
+              "duration": 384000
             }
           },
           {
@@ -210,7 +458,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 423799,
+              "duration": 460199,
               "error_message": "Error: Se esperaba \"No se encontraron resultados para el cliente con CI 0000000000\" pero se encontró \"Texto incorrecto para asegurar que la prueba falle\"\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ002.js:36:11)"
             }
           }
@@ -246,7 +494,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 542199
+              "duration": 384000
             }
           },
           {
@@ -259,7 +507,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 462299
+              "duration": 609199
             }
           },
           {
@@ -272,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 510099
+              "duration": 427800
             }
           },
           {
@@ -285,7 +533,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 534899
+              "duration": 421699
             }
           }
         ],
@@ -320,7 +568,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 701000
+              "duration": 600599
             }
           },
           {
@@ -333,7 +581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 598600
+              "duration": 380199
             }
           },
           {
@@ -346,7 +594,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 490999
+              "duration": 350599
             }
           },
           {
@@ -359,7 +607,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 416299
+              "duration": 362300
             }
           },
           {
@@ -372,7 +620,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 549399
+              "duration": 492899
             }
           }
         ],
@@ -386,5 +634,479 @@
     "name": "Buscar clientes",
     "tags": [],
     "uri": "features\\REQ004.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-productos;actualización-exitosa-de-la-información-de-un-producto",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Actualización exitosa de la información de un producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy en la página de registro de productos",
+            "match": {
+              "location": "features\\test\\REQ005.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 414800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de productos",
+            "match": {
+              "location": "features\\test\\REQ005.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 378900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Nuevo Producto A\" en el campo \"nombre_producto\"",
+            "match": {
+              "location": "features\\test\\REQ005.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 459999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"12345\" en el campo \"codigo_producto\"",
+            "match": {
+              "location": "features\\test\\REQ005.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 335299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hago clic en el botón \"Guardar Cambios\"",
+            "match": {
+              "location": "features\\test\\REQ005.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 307999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería ver \"Información actualizada exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ005.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 372999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Productos",
+    "tags": [],
+    "uri": "features\\REQ005.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-proveedores;actualización-exitosa-de-la-información-de-un-proveedor",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Actualización exitosa de la información de un proveedor",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy en la página de búsqueda de proveedores",
+            "match": {
+              "location": "features\\test\\REQ006.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1234900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de proveedores",
+            "match": {
+              "location": "features\\test\\REQ006.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 716800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Nuevo Nombre\" en el campo \"Nombre_Proveedor\"",
+            "match": {
+              "location": "features\\test\\REQ006.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 643300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"Nueva Dirección\" en el campo \"Direccion_Proveedor\"",
+            "match": {
+              "location": "features\\test\\REQ006.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 520899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hago clic en el botón \"Guardar Cambios\" del feature 6",
+            "match": {
+              "location": "features\\test\\REQ006.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 397199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería verse \"Información actualizada exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ006.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 402499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-proveedores",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Proveedores",
+    "tags": [],
+    "uri": "features\\REQ006.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivación-de-proveedores;inactivación-exitosa-de-un-proveedor",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Inactivación exitosa de un proveedor",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy listo para registrar un nuevo proveedor",
+            "match": {
+              "location": "features\\test\\REQ007.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 571199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de proveedores de la aplicacion",
+            "match": {
+              "location": "features\\test\\REQ007.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "hago clic en el botón \"Inactivar\" junto al proveedor \"La Favorita\"",
+            "match": {
+              "location": "features\\test\\REQ007.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 525800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver \"Proveedor inactivado exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ007.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 496800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivación-de-proveedores",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivación de Proveedores",
+    "tags": [],
+    "uri": "features\\REQ007.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "búsqueda-de-proveedores;búsqueda-exitosa-de-un-proveedor-existente",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Búsqueda exitosa de un proveedor existente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que tengo acceso a la lista de proveedores del sistema",
+            "match": {
+              "location": "features\\test\\REQ008.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 834099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de proveedores correctamente",
+            "match": {
+              "location": "features\\test\\REQ008.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"La Favorita\" en el campo \"campo\"",
+            "match": {
+              "location": "features\\test\\REQ008.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 598200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "debería ver \"La Favorita\"",
+            "match": {
+              "location": "features\\test\\REQ008.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 445800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "búsqueda-de-proveedores",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Búsqueda de Proveedores",
+    "tags": [],
+    "uri": "features\\REQ008.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-productos;registro-exitoso-de-un-nuevo-producto",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Registro exitoso de un nuevo producto",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy autenticado como administrador de productos en la aplicación",
+            "match": {
+              "location": "features\\test\\REQ009.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 761499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de productos de la aplicación del sistema",
+            "match": {
+              "location": "features\\test\\REQ009.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1126100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Producto A\" en el campo \"nombre_producto\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2371300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"12345\" en el input \"codigo_producto\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1553800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"10\" en el campo \"cantidad_producto\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 438800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso \"5.99\" en el campo \"costo_producto\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 549800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "hago clic en el botón \"Registrar Producto\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 433499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "debería ver \"Producto registrado exitosamente\"",
+            "match": {
+              "location": "features\\test\\REQ009.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-productos",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de Productos",
+    "tags": [],
+    "uri": "features\\REQ009.feature"
   }
 ]
