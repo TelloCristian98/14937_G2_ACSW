@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1279199
+              "duration": 2662199
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 163099
+              "duration": 343700
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 100300
+              "duration": 242899
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 106300
+              "duration": 217300
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105400
+              "duration": 219000
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 89300
+              "duration": 158500
             }
           },
           {
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 92599
+              "duration": 141700
             }
           },
           {
@@ -110,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 111599
+              "duration": 189899
             }
           },
           {
@@ -123,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 105400
+              "duration": 116199
             }
           }
         ],
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1044199
+              "duration": 1337099
             }
           },
           {
@@ -171,7 +171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 499500
+              "duration": 2693600
             }
           },
           {
@@ -184,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 407299
+              "duration": 460900
             }
           },
           {
@@ -197,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 412900
+              "duration": 552900
             }
           },
           {
@@ -210,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 386000
+              "duration": 399000
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 395500
+              "duration": 355300
             }
           }
         ],
@@ -258,7 +258,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 348800
+              "duration": 366800
             }
           },
           {
@@ -271,7 +271,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 467200
+              "duration": 469100
             }
           },
           {
@@ -284,7 +284,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 649199
+              "duration": 606899
             }
           },
           {
@@ -297,7 +297,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 431100
+              "duration": 775499
             }
           }
         ],
@@ -332,7 +332,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 395999
+              "duration": 1348799
             }
           },
           {
@@ -345,7 +345,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 347099
+              "duration": 632399
             }
           },
           {
@@ -358,7 +358,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 356599
+              "duration": 534499
             }
           },
           {
@@ -371,7 +371,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 734500
+              "duration": 722399
             }
           }
         ],
@@ -406,7 +406,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 527899
+              "duration": 571899
             }
           },
           {
@@ -419,7 +419,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 516099
+              "duration": 443999
             }
           },
           {
@@ -432,7 +432,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 392699
+              "duration": 506600
             }
           },
           {
@@ -445,7 +445,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384000
+              "duration": 557700
             }
           },
           {
@@ -458,7 +458,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 460199,
+              "duration": 508500,
               "error_message": "Error: Se esperaba \"No se encontraron resultados para el cliente con CI 0000000000\" pero se encontró \"Texto incorrecto para asegurar que la prueba falle\"\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ002.js:36:11)"
             }
           }
@@ -494,7 +494,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384000
+              "duration": 415300
             }
           },
           {
@@ -507,7 +507,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 609199
+              "duration": 593999
             }
           },
           {
@@ -520,7 +520,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 427800
+              "duration": 596900
             }
           },
           {
@@ -533,7 +533,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 421699
+              "duration": 565400
             }
           }
         ],
@@ -568,7 +568,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600599
+              "duration": 533500
             }
           },
           {
@@ -581,7 +581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 380199
+              "duration": 384199
             }
           },
           {
@@ -594,7 +594,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 350599
+              "duration": 359199
             }
           },
           {
@@ -607,7 +607,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 362300
+              "duration": 439700
             }
           },
           {
@@ -620,7 +620,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 492899
+              "duration": 931399
             }
           }
         ],
@@ -640,87 +640,113 @@
     "elements": [
       {
         "description": "",
-        "id": "actualización-de-productos;actualización-exitosa-de-la-información-de-un-producto",
+        "id": "registro-de-proveedores;registro-exitoso-de-un-nuevo-proveedor",
         "keyword": "Scenario",
         "line": 2,
-        "name": "Actualización exitosa de la información de un producto",
+        "name": "Registro exitoso de un nuevo proveedor",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 3,
-            "name": "que estoy en la página de registro de productos",
+            "name": "que estoy autenticado como administrador de proveedores para el test",
             "match": {
-              "location": "features\\test\\REQ005.js:7"
+              "location": "features\\test\\REQ005.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 414800
+              "duration": 445899
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 4,
-            "name": "que estoy en la página de productos",
+            "name": "que estoy en la página de registro de proveedores correctamente en el sistema",
             "match": {
-              "location": "features\\test\\REQ005.js:12"
+              "location": "features\\test\\REQ005.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 378900
+              "duration": 954899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "ingreso \"Nuevo Producto A\" en el campo \"nombre_producto\"",
+            "name": "ingreso \"La Favorita\" en el campo \"nombre_proveedor\"",
             "match": {
-              "location": "features\\test\\REQ005.js:17"
+              "location": "features\\test\\REQ005.js:19"
             },
             "result": {
               "status": "passed",
-              "duration": 459999
+              "duration": 566900
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "ingreso \"12345\" en el campo \"codigo_producto\"",
+            "name": "ingreso \"AV. Amazonas\" en el campo \"direccion_proveedor\"",
             "match": {
-              "location": "features\\test\\REQ005.js:22"
+              "location": "features\\test\\REQ005.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 335299
+              "duration": 336800
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "hago clic en el botón \"Guardar Cambios\"",
+            "name": "ingreso \"0978805846\" en el campo \"telefono_proveedor\"",
             "match": {
-              "location": "features\\test\\REQ005.js:27"
+              "location": "features\\test\\REQ005.js:29"
             },
             "result": {
               "status": "passed",
-              "duration": 307999
+              "duration": 371199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso \"proveedor@gmail.com\" en el campo \"email_proveedor\"",
+            "match": {
+              "location": "features\\test\\REQ005.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 448299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "hago clic en el botón \"Registrar Proveedor\" exitosamente",
+            "match": {
+              "location": "features\\test\\REQ005.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 541699
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
-            "name": "debería ver \"Información actualizada exitosamente\"",
+            "line": 10,
+            "name": "debería ver \"Proveedor registrado exitosamente\"",
             "match": {
-              "location": "features\\test\\REQ005.js:35"
+              "location": "features\\test\\REQ005.js:48"
             },
             "result": {
               "status": "passed",
-              "duration": 372999
+              "duration": 706799
             }
           }
         ],
@@ -728,10 +754,10 @@
         "type": "scenario"
       }
     ],
-    "id": "actualización-de-productos",
+    "id": "registro-de-proveedores",
     "line": 1,
     "keyword": "Feature",
-    "name": "Actualización de Productos",
+    "name": "Registro de Proveedores",
     "tags": [],
     "uri": "features\\REQ005.feature"
   },
@@ -755,7 +781,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1234900
+              "duration": 435800
             }
           },
           {
@@ -768,7 +794,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 716800
+              "duration": 440600
             }
           },
           {
@@ -781,7 +807,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 643300
+              "duration": 635999
             }
           },
           {
@@ -794,7 +820,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 520899
+              "duration": 725400
             }
           },
           {
@@ -807,7 +833,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 397199
+              "duration": 499000
             }
           },
           {
@@ -820,7 +846,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 402499
+              "duration": 623199
             }
           }
         ],
@@ -855,7 +881,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 571199
+              "duration": 445799
             }
           },
           {
@@ -868,7 +894,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 441499
+              "duration": 347699
             }
           },
           {
@@ -881,7 +907,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 525800
+              "duration": 378600
             }
           },
           {
@@ -894,7 +920,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 496800
+              "duration": 336699
             }
           }
         ],
@@ -929,7 +955,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 834099
+              "duration": 280799
             }
           },
           {
@@ -942,7 +968,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 510499
+              "duration": 375999
             }
           },
           {
@@ -955,7 +981,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 598200
+              "duration": 767100
             }
           },
           {
@@ -968,7 +994,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 445800
+              "duration": 1358799
             }
           }
         ],
@@ -1003,7 +1029,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 761499
+              "duration": 486099
             }
           },
           {
@@ -1016,7 +1042,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1126100
+              "duration": 572900
             }
           },
           {
@@ -1029,7 +1055,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2371300
+              "duration": 375300
             }
           },
           {
@@ -1042,7 +1068,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1553800
+              "duration": 569100
             }
           },
           {
@@ -1055,7 +1081,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 438800
+              "duration": 508100
             }
           },
           {
@@ -1068,7 +1094,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 549800
+              "duration": 606800
             }
           },
           {
@@ -1081,7 +1107,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 433499
+              "duration": 780499
             }
           },
           {
@@ -1094,7 +1120,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 551500
+              "duration": 3040600
             }
           }
         ],

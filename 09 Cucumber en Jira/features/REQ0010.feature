@@ -1,4 +1,4 @@
-Feature: Actualización de Productos
+Feature: Actualización de Productos 
   Scenario: Actualización exitosa de la información de un producto
     Given que estoy en la página de registro de productos para el test
     And que estoy en la página de productos correctamente

@@ -1,43 +1,56 @@
-// features/step_definitions/actualizacionProductoSteps.js
+// features/step_definitions/registroProveedorSteps.js
 
 const { Given, When, Then } = require('@cucumber/cucumber');
 
-let updateResult = '';
+let registrationResult = '';
 
-Given('que estoy en la página de registro de productos', function () {
-  // Simulate being on the product registration page
-  console.log('En la página de registro de productos');
+// Given steps simulate the preconditions for the scenario
+Given('que estoy autenticado como administrador de proveedores para el test', function () {
+  // Simulate being authenticated as a provider administrator
+  console.log('Autenticado como administrador de proveedores para el test');
 });
 
-Given('que estoy en la página de productos', function () {
-  // Simulate being on the products page
-  console.log('En la página de productos');
+Given('que estoy en la página de registro de proveedores correctamente en el sistema', function () {
+  // Simulate being on the provider registration page successfully
+  console.log('En la página de registro de proveedores correctamente en el sistema');
 });
 
-When('ingreso "Nuevo Producto A" en el campo "nombre_producto"', function () {
-  // Simulate entering a product name into the field
-  console.log('Ingresado "Nuevo Producto A" en el campo "nombre_producto"');
+// When steps simulate the actions being performed
+When('ingreso "La Favorita" en el campo "nombre_proveedor"', function () {
+  // Simulate entering the provider name
+  console.log('Ingresado "La Favorita" en el campo "nombre_proveedor"');
 });
 
-When('ingreso "12345" en el campo "codigo_producto"', function () {
-  // Simulate entering a product code into the field
-  console.log('Ingresado "12345" en el campo "codigo_producto"');
+When('ingreso "AV. Amazonas" en el campo "direccion_proveedor"', function () {
+  // Simulate entering the provider address
+  console.log('Ingresado "AV. Amazonas" en el campo "direccion_proveedor"');
 });
 
-When('hago clic en el botón "Guardar Cambios"', function () {
-  // Simulate clicking the save button
-  console.log('Haciendo clic en el botón "Guardar Cambios"');
+When('ingreso "0978805846" en el campo "telefono_proveedor"', function () {
+  // Simulate entering the provider phone number
+  console.log('Ingresado "0978805846" en el campo "telefono_proveedor"');
+});
+
+When('ingreso "proveedor@gmail.com" en el campo "email_proveedor"', function () {
+  // Simulate entering the provider email
+  console.log('Ingresado "proveedor@gmail.com" en el campo "email_proveedor"');
+});
+
+When('hago clic en el botón "Registrar Proveedor" exitosamente', function () {
+  // Simulate clicking the "Register Provider" button successfully
+  console.log('Haciendo clic en el botón "Registrar Proveedor" exitosamente');
   
-  // Simulate successful update
-  updateResult = 'Información actualizada exitosamente';
+  // Simulate successful registration
+  registrationResult = 'Proveedor registrado exitosamente';
 });
 
-Then('debería ver "Información actualizada exitosamente"', function () {
+// Then step checks the result of the action
+Then('debería ver "Proveedor registrado exitosamente"', function () {
   // Simulate checking the result
-  console.log('Verificando que el texto "Información actualizada exitosamente" está presente');
+  console.log('Verificando que el texto "Proveedor registrado exitosamente" está presente');
   
-  // Basic assertion to check if updateResult matches the expected message
-  if (updateResult !== 'Información actualizada exitosamente') {
-    throw new Error('Se esperaba "Información actualizada exitosamente" pero se encontró "' + updateResult + '"');
+  // Basic assertion to check if registrationResult matches the expected message
+  if (registrationResult !== 'Proveedor registrado exitosamente') {
+    throw new Error('Se esperaba "Proveedor registrado exitosamente" pero se encontró "' + registrationResult + '"');
   }
 });
