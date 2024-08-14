@@ -1,0 +1,58 @@
+[
+  {
+    "uri": "features/test.feature",
+    "id": "test-feature",
+    "keyword": "Feature",
+    "name": "Test Feature",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "test-feature;test-scenario",
+        "keyword": "Scenario",
+        "name": "Test Scenario",
+        "description": "",
+        "line": 2,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "a precondition",
+            "line": 3,
+            "match": {
+              "location": "steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "an action is performed",
+            "line": 4,
+            "match": {
+              "location": "steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an outcome is expected",
+            "line": 5,
+            "match": {
+              "location": "steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
