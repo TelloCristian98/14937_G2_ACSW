@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2662199
+              "duration": 1505999
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 343700
+              "duration": 129599
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 242899
+              "duration": 92399
             }
           },
           {
@@ -58,7 +58,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 217300
+              "duration": 104299
             }
           },
           {
@@ -71,7 +71,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 219000
+              "duration": 88100
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158500
+              "duration": 92399
             }
           },
           {
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 141700
+              "duration": 89899
             }
           },
           {
@@ -110,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 189899
+              "duration": 117500
             }
           },
           {
@@ -123,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116199
+              "duration": 111800
             }
           }
         ],
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1337099
+              "duration": 1023199
             }
           },
           {
@@ -171,7 +171,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2693600
+              "duration": 559399
             }
           },
           {
@@ -184,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 460900
+              "duration": 381700
             }
           },
           {
@@ -197,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 552900
+              "duration": 471499
             }
           },
           {
@@ -210,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 399000
+              "duration": 416400
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 355300
+              "duration": 441199
             }
           }
         ],
@@ -237,6 +237,107 @@
     "name": "Actualización de Productos",
     "tags": [],
     "uri": "features\\REQ0010.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualizar-información-de-productos-para-el-fallo-de-req010;fallo-al-intentar-actualizar-un-producto-con-precio-negativo-para-el-fallo-de-req010",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al intentar actualizar un producto con precio negativo para el fallo de REQ010",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de productos para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de editar para el producto con código \"PROD001\" para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 243500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"-100\" en el campo \"costo_producto\" para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "hago clic en el botón de guardar para el producto con código \"PROD001\" para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 92999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "debería ver \"Error: Precio inválido\" para el fallo de REQ010",
+            "match": {
+              "location": "features\\test\\REQ0010F.js:37"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 656100,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: Precio inválido, but got: Información actualizada exitosamente\n    + expected - actual\n\n    -Información actualizada exitosamente\n    +Error: Precio inválido\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ0010F.js:39:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualizar-información-de-productos-para-el-fallo-de-req010",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualizar información de productos para el fallo de REQ010",
+    "tags": [],
+    "uri": "features\\REQ0010F.feature"
   },
   {
     "description": "",
@@ -258,7 +359,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 366800
+              "duration": 644099
             }
           },
           {
@@ -271,7 +372,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 469100
+              "duration": 496100
             }
           },
           {
@@ -284,7 +385,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 606899
+              "duration": 617700
             }
           },
           {
@@ -297,7 +398,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 775499
+              "duration": 534800
             }
           }
         ],
@@ -311,6 +412,81 @@
     "name": "Inactivación de Productos",
     "tags": [],
     "uri": "features\\REQ0011.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivar-un-producto-para-el-fallo-de-req011;fallo-al-intentar-inactivar-un-producto-inexistente-para-el-fallo-de-req011",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al intentar inactivar un producto inexistente para el fallo de REQ011",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ011",
+            "match": {
+              "location": "features\\test\\REQ0011F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de productos para el fallo de REQ011",
+            "match": {
+              "location": "features\\test\\REQ0011F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de inactivar para el producto con código \"9999\" para el fallo de REQ011",
+            "match": {
+              "location": "features\\test\\REQ0011F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: El producto no existe\" para el fallo de REQ011",
+            "match": {
+              "location": "features\\test\\REQ0011F.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 435200,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: El producto no existe, but got: Producto inactivado exitosamente\n    + expected - actual\n\n    -Producto inactivado exitosamente\n    +Error: El producto no existe\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ0011F.js:26:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivar-un-producto-para-el-fallo-de-req011",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivar un producto para el fallo de REQ011",
+    "tags": [],
+    "uri": "features\\REQ0011F.feature"
   },
   {
     "description": "",
@@ -332,7 +508,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1348799
+              "duration": 466799
             }
           },
           {
@@ -345,7 +521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 632399
+              "duration": 495099
             }
           },
           {
@@ -358,7 +534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 534499
+              "duration": 415399
             }
           },
           {
@@ -371,7 +547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 722399
+              "duration": 597100
             }
           }
         ],
@@ -385,6 +561,221 @@
     "name": "Búsqueda de Productos",
     "tags": [],
     "uri": "features\\REQ0012.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buscar-información-de-productos-para-el-fallo-de-req012;fallo-al-buscar-un-producto-con-código-incorrecto-para-el-fallo-de-req012",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al buscar un producto con código incorrecto para el fallo de REQ012",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ012",
+            "match": {
+              "location": "features\\test\\REQ0012F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de productos para el fallo de REQ012",
+            "match": {
+              "location": "features\\test\\REQ0012F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso \"XYZ123\" en el campo de búsqueda para el fallo de REQ012",
+            "match": {
+              "location": "features\\test\\REQ0012F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: Producto no encontrado\" para el fallo de REQ012",
+            "match": {
+              "location": "features\\test\\REQ0012F.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 324199,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: Producto no encontrado, but got: Producto encontrado\n    + expected - actual\n\n    -Producto encontrado\n    +Error: Producto no encontrado\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ0012F.js:26:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "buscar-información-de-productos-para-el-fallo-de-req012",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Buscar información de productos para el fallo de REQ012",
+    "tags": [],
+    "uri": "features\\REQ0012F.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-clientes-fallido;registro-fallido-de-un-nuevo-cliente",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Registro fallido de un nuevo cliente",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado en la pagina para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de registro de clientes para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso \"17245\" en el campo \"ci_cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"Juan\" en el campo \"nombre_cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso \"Perez\" en el campo \"apellido_cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 135600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "ingreso \"78805846\" en el campo \"telefono_cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 493499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "ingreso \"25 de noviembre y maldonado\" en el campo \"direccion_cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "hago clic en el botón \"Registrar Cliente\" para la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "debería ver \"Registro exitoso\" en la prueba de fallo 01",
+            "match": {
+              "location": "features\\test\\REQ001F.js:26"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 210500,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Registro exitoso, but got: Registro fallido\n    + expected - actual\n\n    -Registro fallido\n    +Registro exitoso\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ001F.js:28:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-clientes-fallido",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de clientes fallido",
+    "tags": [],
+    "uri": "features\\REQ001F.feature"
   },
   {
     "description": "",
@@ -406,7 +797,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 571899
+              "duration": 469000
             }
           },
           {
@@ -419,7 +810,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 443999
+              "duration": 536200
             }
           },
           {
@@ -432,7 +823,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 506600
+              "duration": 515100
             }
           },
           {
@@ -445,7 +836,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 557700
+              "duration": 593200
             }
           },
           {
@@ -458,7 +849,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 508500,
+              "duration": 599700,
               "error_message": "Error: Se esperaba \"No se encontraron resultados para el cliente con CI 0000000000\" pero se encontró \"Texto incorrecto para asegurar que la prueba falle\"\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ002.js:36:11)"
             }
           }
@@ -473,6 +864,106 @@
     "name": "Actualizar información de clientes",
     "tags": [],
     "uri": "features\\REQ002.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualizar-información-de-clientes-para-req002;actualización-fallida-por-datos-inválidos-para-req002",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Actualización fallida por datos inválidos para REQ002",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de clientes para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 87599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de editar para el cliente con CI \"17111457896\" para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"123\" en el campo \"first_name\" para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 108000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "hago clic en el botón de guardar para el cliente con CI \"17111457896\" para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 192299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "debería ver \"Error: Nombre inválido\" para REQ002",
+            "match": {
+              "location": "features\\test\\REQ002F.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualizar-información-de-clientes-para-req002",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualizar información de clientes para REQ002",
+    "tags": [],
+    "uri": "features\\REQ002F.feature"
   },
   {
     "description": "",
@@ -494,7 +985,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 415300
+              "duration": 603000
             }
           },
           {
@@ -507,7 +998,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 593999
+              "duration": 502799
             }
           },
           {
@@ -520,7 +1011,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 596900
+              "duration": 361100
             }
           },
           {
@@ -533,7 +1024,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 565400
+              "duration": 344299
             }
           }
         ],
@@ -547,6 +1038,81 @@
     "name": "Inactivar clientes",
     "tags": [],
     "uri": "features\\REQ003.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivar-un-cliente-para-el-fallo-de-req003;fallo-al-intentar-inactivar-un-cliente-inexistente-para-el-fallo-de-req003",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al intentar inactivar un cliente inexistente para el fallo de REQ003",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ003",
+            "match": {
+              "location": "features\\test\\REQ003F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de clientes para el fallo de REQ003",
+            "match": {
+              "location": "features\\test\\REQ003F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de inactivar para el cliente con CI \"9999999999\" para el fallo de REQ003",
+            "match": {
+              "location": "features\\test\\REQ003F.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 128299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: El cliente no existe\" en el fallo de REQ003",
+            "match": {
+              "location": "features\\test\\REQ003F.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 270999,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: El cliente no existe, but got: Cliente inactivado con éxito\n    + expected - actual\n\n    -Cliente inactivado con éxito\n    +Error: El cliente no existe\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ003F.js:26:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivar-un-cliente-para-el-fallo-de-req003",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivar un cliente para el fallo de REQ003",
+    "tags": [],
+    "uri": "features\\REQ003F.feature"
   },
   {
     "description": "",
@@ -568,7 +1134,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 533500
+              "duration": 363400
             }
           },
           {
@@ -581,7 +1147,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 384199
+              "duration": 339000
             }
           },
           {
@@ -594,7 +1160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 359199
+              "duration": 400099
             }
           },
           {
@@ -607,7 +1173,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 439700
+              "duration": 321699
             }
           },
           {
@@ -620,7 +1186,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 931399
+              "duration": 428899
             }
           }
         ],
@@ -634,6 +1200,81 @@
     "name": "Buscar clientes",
     "tags": [],
     "uri": "features\\REQ004.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buscar-información-de-clientes;fallo-al-buscar-un-cliente-con-ci-incorrecto-para-el-fallo-de-req004",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al buscar un cliente con CI incorrecto para el fallo de REQ004",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ004",
+            "match": {
+              "location": "features\\test\\REQ004F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de clientes para el fallo de REQ004",
+            "match": {
+              "location": "features\\test\\REQ004F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso \"ABC123\" en el campo de búsqueda para el fallo de REQ004",
+            "match": {
+              "location": "features\\test\\REQ004F.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: Cliente no encontrado\" para el fallo de REQ004",
+            "match": {
+              "location": "features\\test\\REQ004F.js:24"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 453499,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: Cliente no encontrado, but got: Cliente encontrado\n    + expected - actual\n\n    -Cliente encontrado\n    +Error: Cliente no encontrado\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ004F.js:26:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "buscar-información-de-clientes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Buscar información de clientes",
+    "tags": [],
+    "uri": "features\\REQ004F.feature"
   },
   {
     "description": "",
@@ -655,7 +1296,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 445899
+              "duration": 389099
             }
           },
           {
@@ -668,7 +1309,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 954899
+              "duration": 317900
             }
           },
           {
@@ -681,7 +1322,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 566900
+              "duration": 370399
             }
           },
           {
@@ -694,7 +1335,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 336800
+              "duration": 338399
             }
           },
           {
@@ -707,7 +1348,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 371199
+              "duration": 356300
             }
           },
           {
@@ -720,7 +1361,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 448299
+              "duration": 343100
             }
           },
           {
@@ -733,7 +1374,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 541699
+              "duration": 338399
             }
           },
           {
@@ -746,7 +1387,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 706799
+              "duration": 370199
             }
           }
         ],
@@ -760,6 +1401,133 @@
     "name": "Registro de Proveedores",
     "tags": [],
     "uri": "features\\REQ005.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registro-de-proveedores-para-el-fallo-de-req005;registro-exitoso-de-un-nuevo-proveedor-para-el-fallo-de-req005",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Registro exitoso de un nuevo proveedor para el fallo de REQ005",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy autenticado como administrador de proveedores para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de proveedores para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"La Favorita\" en el campo \"nombre_proveedor\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 81300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"AV. Amazonas\" en el campo \"direccion_proveedor\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso \"0978805846\" en el campo \"telefono_proveedor\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso \"proveedor@gmail.com\" en el campo \"email_proveedor\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "hago clic en el botón \"Registrar Proveedor\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "debería ver \"Proveedor registrado exitosamente\" para el fallo de REQ005",
+            "match": {
+              "location": "features\\test\\REQ005F.js:40"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 210000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Proveedor registrado exitosamente, but got: Error al registrar proveedor\n    + expected - actual\n\n    -Error al registrar proveedor\n    +Proveedor registrado exitosamente\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ005F.js:42:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registro-de-proveedores-para-el-fallo-de-req005",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registro de Proveedores para el fallo de REQ005",
+    "tags": [],
+    "uri": "features\\REQ005F.feature"
   },
   {
     "description": "",
@@ -781,7 +1549,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 435800
+              "duration": 378800
             }
           },
           {
@@ -794,7 +1562,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 440600
+              "duration": 329100
             }
           },
           {
@@ -807,7 +1575,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 635999
+              "duration": 397199
             }
           },
           {
@@ -820,7 +1588,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 725400
+              "duration": 489800
             }
           },
           {
@@ -833,7 +1601,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 499000
+              "duration": 623699
             }
           },
           {
@@ -846,7 +1614,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 623199
+              "duration": 1137999
             }
           }
         ],
@@ -860,6 +1628,107 @@
     "name": "Actualización de Proveedores",
     "tags": [],
     "uri": "features\\REQ006.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "actualización-de-proveedores-para-el-fallo-de-req006;actualización-exitosa-de-la-información-de-un-proveedor-para-el-fallo-de-req006",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Actualización exitosa de la información de un proveedor para el fallo de REQ006",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "que estoy en la página de búsqueda de proveedores para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 113000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "que estoy en la página de registro de proveedores para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "ingreso \"Nuevo Nombre\" en el campo \"Nombre_Proveedor\" para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "ingreso \"Nueva Dirección\" en el campo \"Direccion_Proveedor\" para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "hago clic en el botón \"Guardar Cambios\" para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 94200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería ver \"Información actualizada exitosamente\" para el fallo de REQ006",
+            "match": {
+              "location": "features\\test\\REQ006F.js:27"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 290999,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Información actualizada exitosamente, but got: Error al actualizar la información del proveedor\n    + expected - actual\n\n    -Error al actualizar la información del proveedor\n    +Información actualizada exitosamente\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ006F.js:29:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "actualización-de-proveedores-para-el-fallo-de-req006",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Actualización de Proveedores para el fallo de REQ006",
+    "tags": [],
+    "uri": "features\\REQ006F.feature"
   },
   {
     "description": "",
@@ -881,7 +1750,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 445799
+              "duration": 440600
             }
           },
           {
@@ -894,7 +1763,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 347699
+              "duration": 269999
             }
           },
           {
@@ -907,7 +1776,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 378600
+              "duration": 293400
             }
           },
           {
@@ -920,7 +1789,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 336699
+              "duration": 306200
             }
           }
         ],
@@ -934,6 +1803,81 @@
     "name": "Inactivación de Proveedores",
     "tags": [],
     "uri": "features\\REQ007.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "inactivar-un-proveedor-para-el-fallo-de-req007;fallo-al-intentar-inactivar-un-proveedor-inexistente-para-el-fallo-de-req007",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al intentar inactivar un proveedor inexistente para el fallo de REQ007",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ007",
+            "match": {
+              "location": "features\\test\\REQ007F.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de proveedores para el fallo de REQ007",
+            "match": {
+              "location": "features\\test\\REQ007F.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "hago clic en el botón de inactivar para el proveedor con nombre \"Proveedor Fantasma\" para el fallo de REQ007",
+            "match": {
+              "location": "features\\test\\REQ007F.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: El proveedor no existe\" para el fallo de REQ007",
+            "match": {
+              "location": "features\\test\\REQ007F.js:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 225000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: El proveedor no existe, but got: Proveedor inactivado exitosamente\n    + expected - actual\n\n    -Proveedor inactivado exitosamente\n    +Error: El proveedor no existe\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ007F.js:22:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "inactivar-un-proveedor-para-el-fallo-de-req007",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Inactivar un proveedor para el fallo de REQ007",
+    "tags": [],
+    "uri": "features\\REQ007F.feature"
   },
   {
     "description": "",
@@ -955,7 +1899,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 280799
+              "duration": 347800
             }
           },
           {
@@ -968,7 +1912,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375999
+              "duration": 360699
             }
           },
           {
@@ -981,7 +1925,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 767100
+              "duration": 352200
             }
           },
           {
@@ -994,7 +1938,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1358799
+              "duration": 424000
             }
           }
         ],
@@ -1008,6 +1952,81 @@
     "name": "Búsqueda de Proveedores",
     "tags": [],
     "uri": "features\\REQ008.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "buscar-información-de-proveedores-para-el-fallo-de-req008;fallo-al-buscar-un-proveedor-con-nombre-incorrecto-para-el-fallo-de-req008",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al buscar un proveedor con nombre incorrecto para el fallo de REQ008",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ008",
+            "match": {
+              "location": "features\\test\\REQ008F.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de proveedores para el fallo de REQ008",
+            "match": {
+              "location": "features\\test\\REQ008F.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "ingreso \"Proveedor Inexistente\" en el campo de búsqueda para el fallo de REQ008",
+            "match": {
+              "location": "features\\test\\REQ008F.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 132699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "debería ver \"Error: Proveedor no encontrado\" para el fallo de REQ008",
+            "match": {
+              "location": "features\\test\\REQ008F.js:20"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 248799,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: Proveedor no encontrado, but got: Proveedor encontrado exitosamente\n    + expected - actual\n\n    -Proveedor encontrado exitosamente\n    +Error: Proveedor no encontrado\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ008F.js:22:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "buscar-información-de-proveedores-para-el-fallo-de-req008",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Buscar información de proveedores para el fallo de REQ008",
+    "tags": [],
+    "uri": "features\\REQ008F.feature"
   },
   {
     "description": "",
@@ -1029,7 +2048,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 486099
+              "duration": 503799
             }
           },
           {
@@ -1042,7 +2061,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 572900
+              "duration": 394300
             }
           },
           {
@@ -1055,7 +2074,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 375300
+              "duration": 326600
             }
           },
           {
@@ -1068,7 +2087,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 569100
+              "duration": 284200
             }
           },
           {
@@ -1081,7 +2100,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 508100
+              "duration": 272100
             }
           },
           {
@@ -1094,7 +2113,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 606800
+              "duration": 369599
             }
           },
           {
@@ -1107,7 +2126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 780499
+              "duration": 423599
             }
           },
           {
@@ -1120,7 +2139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3040600
+              "duration": 368500
             }
           }
         ],
@@ -1134,5 +2153,93 @@
     "name": "Registro de Productos",
     "tags": [],
     "uri": "features\\REQ009.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registrar-un-nuevo-producto-para-el-fallo-de-req009;fallo-al-intentar-registrar-un-producto-con-código-duplicado-para-el-fallo-de-req009",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Fallo al intentar registrar un producto con código duplicado para el fallo de REQ009",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "que estoy autenticado para el fallo de REQ009",
+            "match": {
+              "location": "features\\test\\REQ009F.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "que estoy en la página de registro de productos para el fallo de REQ009",
+            "match": {
+              "location": "features\\test\\REQ009F.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "registro un producto con código \"PROD123\" para el fallo de REQ009",
+            "match": {
+              "location": "features\\test\\REQ009F.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "registro otro producto con el mismo código \"PROD123\" para el fallo de REQ009",
+            "match": {
+              "location": "features\\test\\REQ009F.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "debería ver \"Error: Código ya registrado\" para el fallo de REQ009",
+            "match": {
+              "location": "features\\test\\REQ009F.js:29"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 234000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Expected: Error: Código ya registrado, but got: Producto registrado exitosamente\n    + expected - actual\n\n    -Producto registrado exitosamente\n    +Error: Código ya registrado\n\n    at World.<anonymous> (D:\\USER\\Desktop\\PruebasAseg\\14937_G2_ACSW\\09 Cucumber en Jira\\features\\test\\REQ009F.js:31:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "registrar-un-nuevo-producto-para-el-fallo-de-req009",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registrar un nuevo producto para el fallo de REQ009",
+    "tags": [],
+    "uri": "features\\REQ009F.feature"
   }
 ]
